@@ -21,10 +21,10 @@ function succeedAtWork() {
 }
 
 function failAtWork() {
-  return new rsvp.Promise(function succeed(resolve) {
+  return new rsvp.Promise(function succeed(resolve, reject) {
     var withAnErrorMessage = 'You failed';
 
-    resolve(withAnErrorMessage); // This could be an object; whatever, doesn't matter.
+    reject(withAnErrorMessage); // This could be an object; whatever, doesn't matter.
   });
 }
 

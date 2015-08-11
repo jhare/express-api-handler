@@ -23,7 +23,7 @@ function failAtWork() {
   return new rsvp.Promise(function succeed(resolve) {
     var withAnErrorMessage = 'You failed';
 
-    resolve(withAnErrorMessage); // This could be an object; whatever, doesn't matter.
+    reject(withAnErrorMessage); // This could be an object; whatever, doesn't matter.
   });
 }
 
