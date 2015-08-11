@@ -1,6 +1,6 @@
 {
   "name": "express-dumb-api-handler",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A really dumb API response handler.",
   "main": "index.js",
   "scripts": {
