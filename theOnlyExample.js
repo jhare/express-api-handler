@@ -1,12 +1,13 @@
-# express-api-handler
-A really dumb API handler to make your responses consistent.
+'use strict';
 
-## Example
-(click [here](/theOnlyExample.js) for the full example)
+var rsvp = require('rsvp');
+var express = require('express');
 
-```js
+//var DumbAPI = require('express-dumb-api-handler');
+// Use the commented line above in the real world, dummy.
+var DumbAPI = require('./index');
 
-// ....
+var myApp = express();
 
 function succeedAtWork() {
   return new rsvp.Promise(function succeed(resolve) {
@@ -40,7 +41,6 @@ myApp.get('/failure', function failure(request, response) {
   failAtWork().then(dumbAPI.sendSuccess, dumbAPI.sendFailure);
 });
 
-
-// ...
-
-```
+var port = 8080;
+myApp.listen(port);
+console.log('Listening on port ' + port);

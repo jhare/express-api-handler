@@ -26,6 +26,10 @@
     "url": "https://github.com/jhare/express-dumb-api-handler/issues"
   },
   "homepage": "https://github.com/jhare/express-dumb-api-handler",
+  "dependencies": {
+    "express": "*",
+    "rsvp": "*"
+  },
   "devDependencies": {
     "gulp": "3.x.x"
   }
